@@ -91,8 +91,15 @@ div{
   text-align: center;
 }
 /* Underline headings */
+h1 {
+  font-size: 50px;
+}
 h2 {
   text-decoration: underline;
+  font-size: 42px;
+}
+h3 {
+  font-size: 35px;
 }
 div{
   background-image: url("../images/A_blank_black_picture.jpg");
@@ -104,4 +111,7 @@ div{
 /* Picture of me */
 aside {
   float: right;
+}
+p {
+  font-size: 32px;
 }
