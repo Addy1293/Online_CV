@@ -1,117 +1,127 @@
-@keyframes bgcolor {
-  0% {
-      background-color: lime;
-  }
-
-  30% {
-      background-color: yellow;
-  }
-
-  60% {
-      background-color: orange;
-  }
-
-  90% {
-      background-color: #f35;
-  }
-
-  100% {
-      background-color: red;
-  }
-}
-
-body {
-  -webkit-animation: bgcolor 20s infinite;
-  animation: bgcolor 10s infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
+/*------------------------------- Animation to walk-------------- */
 /* Egg walking */
 #runner {
-  background: url("../images/blue-run-spritesheet.png");
-  width: 200px;
-  height: 210px;
-  animation: walk 1s steps(8) infinite,
-             forward 10s linear infinite;
-}
-@keyframes walk{
+    background: url("../images/blue-run-spritesheet.png");
+    width: 200px;
+    height: 200px;
+    animation: walk 1s steps(8) infinite,
+               forward 10s linear infinite;
+               animation: walk 1s steps(8) infinite,
+               forward 10s linear infinite;
+  }
+  @keyframes walk{
+      0%{
+        background-position: 0px;
+      }
+      100%{
+        background-position: 1368px;
+      }
+  }
+  @keyframes forward{
     0%{
-      background-position: 0px;
+      transform: translateX(-100px);
     }
     100%{
-      background-position: 1368px;
+      transform: translateX(500px);
     }
-}
-@keyframes forward{
-  0%{
-    transform: translateX(-100px);
   }
-  100%{
-    transform: translateX(500px);
+  /* -------------------------Color Behind picture----------------------------- */
+@keyframes bgcolor {
+    0% {
+        background-color: black;
+    }
+  
+    30% {
+        background-color: blue;
+    }
+  
+    60% {
+        background-color: darkred;
+    }
+  
+    90% {
+        background-color: purple;
+    }
+  
+    100% {
+        background-color: orangered;
+    }
   }
+  
+  body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #282e34;
 }
-/* structure for nav bar */
-body {
-  background-size:cover;
-  font-family:spirax,cursive;
-  color: white;
+/* Parralax effect */
+.jpeg1, .jpeg2, .jpeg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* fixed=Parralax effect */
+    background-attachment: fixed;
 }
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
+/* Picture sizing */
+.jpeg1{
+    min-height: 80%;
+    background-image: url('../images/back1.jpg');
 }
-ul li {
-  float: left;
-  width: 270px;
-  height: 40px;
-  background-color: black;
-  opacity: .6;
-  line-height: 40px;
-  text-align: center;
-  font-size: 30px;
-  margin-right: 5px;
-}
-ul li a {
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-ul li a:hover {
-  background-color: limegreen;
-}
-ul li ul li {
-  display: none;
-}
-ul li:hover ul li {
-  display: block;
-}
-/* end of structure */
-div{
-  text-align: center;
-}
-/* Underline headings */
-h1 {
-  font-size: 50px;
-}
-h2 {
-  text-decoration: underline;
-  font-size: 42px;
-}
-h3 {
-  font-size: 35px;
-}
-div{
-  background-image: url("../images/A_blank_black_picture.jpg");
-  height: 40%;
-  width: 50%;
-  position: center;
-  text-align: center;
-}
-/* Picture of me */
-aside {
-  float: right;
-}
-p {
-  font-size: 32px;
-}
+.jpeg2{
+    min-height: 400px;
+    background-image: url('../images/tree.jpg');
+  }
+.jpeg3{
+    min-height: 400px;
+    background-image: url('../images/back4.png');
+ }
+ /* Moving text to center */
+ .section{
+     text-align: center;
+     padding: 35px 70px;
+ }
+ /* light color for first section */
+ .sec-light{
+     background-color: grey;
+     color: rgb(71, 70, 70);
+ }
+ /* dark color for section */
+ .sec-dark{
+     background-color: #282e34;
+     color: #ddd;
+ }
+ /* text sizing and adjustments */
+ .paragragh{
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     text-align: center;
+     color: black;
+     font-size: 28px;
+     letter-spacing: 5px;
+     text-transform: uppercase;
+ }
+ /* border color */
+ .border{
+     background-color: rgb(29, 16, 16);
+     color: white;
+     padding: 20px;
+ }
+ /* border slightly transparent */
+ .border.transparent{
+     margin-top: 40px;
+     opacity: 0.80;
+ }
+ 
