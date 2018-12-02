@@ -100,5 +100,25 @@
      margin-top: 40px;
      opacity: 0.80;
  }
- 
- 
+ @media (min-width: 320px) and (max-width: 575px) {
+    .paragragh{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-size: 16px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    body, html{
+        height: 100%;
+        margin: 0;
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
+        font-family: Fontawesome;
+        font-weight: 400;
+        line-height: 1.8em;
+        color: #282e34;
+    }
+ }
