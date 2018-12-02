@@ -123,4 +123,24 @@
         line-height: 1.8em;
         color: #282e34;
     }
+ .border{
+    background-color: rgb(29, 16, 16);
+    color: white;
+    padding: 25px;
+    opacity: 0.50;
+}
+.border.transparent{
+    margin-top: 40px;
+    opacity: 0.70;
+}
+.jpeg1, .jpeg2, .jpeg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* fixed=Parralax effect */
+    background-attachment: fixed;
+     }
  }
