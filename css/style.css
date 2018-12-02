@@ -21,13 +21,14 @@
         background-color: orangered;
     }
   }
-  
+  /* Animation for bg colour */
   body {
     -webkit-animation: bgcolor 20s infinite;
     animation: bgcolor 10s infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
   }
+  /* Different text sizes and increments */
   body, html{
     height: 100%;
     margin: 0;
@@ -99,4 +100,5 @@
      margin-top: 40px;
      opacity: 0.80;
  }
+ 
  
