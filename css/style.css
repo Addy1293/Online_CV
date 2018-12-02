@@ -101,6 +101,9 @@
      margin-top: 40px;
      opacity: 0.70;
  }
+ a{
+     color: white;
+ }
  /* Mobile responsiveness */
  @media (min-width: 301px) and (max-width: 558px) {
     .paragragh{
