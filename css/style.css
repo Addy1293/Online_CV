@@ -1,46 +1,20 @@
-/*------------------------------- Animation to walk-------------- */
-/* Egg walking */
-#runner {
-    background: url("../images/blue-run-spritesheet.png");
-    width: 200px;
-    height: 200px;
-    animation: walk 1s steps(8) infinite,
-               forward 10s linear infinite;
-               animation: walk 1s steps(8) infinite,
-               forward 10s linear infinite;
-  }
-  @keyframes walk{
-      0%{
-        background-position: 0px;
-      }
-      100%{
-        background-position: 1368px;
-      }
-  }
-  @keyframes forward{
-    0%{
-      transform: translateX(-100px);
-    }
-    100%{
-      transform: translateX(500px);
-    }
-  }
+
   /* -------------------------Color Behind picture----------------------------- */
 @keyframes bgcolor {
     0% {
-        background-color: black;
+        background-color: orangered;
     }
   
     30% {
-        background-color: blue;
+        background-color: lightblue;
     }
   
     60% {
-        background-color: darkred;
+        background-color: purple;
     }
   
     90% {
-        background-color: purple;
+        background-color: violet;
     }
   
     100% {
@@ -77,15 +51,15 @@
 /* Picture sizing */
 .jpeg1{
     min-height: 80%;
-    background-image: url('../images/back1.jpg');
+    background-image: url('../images/cover-image.jpg');
 }
 .jpeg2{
     min-height: 400px;
-    background-image: url('../images/tree.jpg');
+    background-image: url('../images/middle.jpg');
   }
 .jpeg3{
     min-height: 400px;
-    background-image: url('../images/back4.png');
+    background-image: url('../images/footer.jpg');
  }
  /* Moving text to center */
  .section{
@@ -97,7 +71,7 @@
      background-color: grey;
      color: rgb(71, 70, 70);
  }
- /* dark color for section */
+ /* dark color for second section */
  .sec-dark{
      background-color: #282e34;
      color: #ddd;
