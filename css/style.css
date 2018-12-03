@@ -135,15 +135,5 @@
 .border.transparent{
     margin-top: 40px;
     opacity: 0.70;
-}
-.jpeg1, .jpeg2, .jpeg3{
-    position: relative;
-    opacity: 0.60;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    /* fixed=Parralax effect */
-    background-attachment: fixed;
-     }
+    }
  }
