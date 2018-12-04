@@ -50,6 +50,13 @@
     /* fixed=Parralax effect */
     background-attachment: fixed;
 }
+#ability{
+    height: 35%;
+    min-width: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-decoration: none;
+}
 /* Picture sizing */
 .jpeg1{
     min-height: 80%;
