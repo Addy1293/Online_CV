@@ -137,3 +137,51 @@
     opacity: 0.70;
     }
  }
+ /* ==============================================Name Animation====================================*/
+ @import url(https://fonts.googleapis.com/css?family=Montserrat);
+svg {
+    display: block;
+    font: 3.8em 'Montserrat';
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.0s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4285F4;
+	animation-delay: 0;
+}
+
+.text-copy:nth-child(2){
+	stroke: #DB4437;
+	animation-delay: -1s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #F4B400;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #DB4437;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #0F9D58;
+	animation-delay: -3.8s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
