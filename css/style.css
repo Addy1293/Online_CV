@@ -115,6 +115,7 @@
   h1 {
       color: #282e34;
       letter-spacing: 8px;
+      font-family: 'Charmonman', cursive;
   }
   .glow {
       text-shadow: 0 0 20px #282e34;
