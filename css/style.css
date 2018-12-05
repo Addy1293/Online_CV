@@ -104,8 +104,42 @@
  a{
      color: white;
  }
- /* Mobile responsiveness */
- @media (min-width: 301px) and (max-width: 558px) {
+
+ /* ==============================================Name Animation====================================*/
+  .text {
+      margin-top: 100px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+  }
+  h1 {
+      color: #282e34;
+      letter-spacing: 8px;
+  }
+  .glow {
+      text-shadow: 0 0 20px #282e34;
+      animation: 3s glow-effect infinite alternate;
+  }
+  .glow:hover {
+      color: white;
+      animation: none;
+      text-shadow: 0 0 30px white, 0 0 60px white, 0 0 70px white, 0 0 90px white;
+  }
+  @keyframes blink {
+      100% {
+          color: white;
+          animation: none;
+          text-shadow: 0 0 30px white, 0 0 60px white, 0 0 70px white, 0 0 90px white;
+      }
+  }
+  @keyframes glow-effect {
+      100% {
+          text-shadow: 0 0 30px yellow, 0 0 40px yellow, 0 0 60px yellow;
+      }
+  }
+/* ==============================================End of Name============================= */
+/* Mobile responsiveness */
+@media (min-width: 301px) and (max-width: 558px) {
     .paragragh{
         position: absolute;
         top: 50%;
@@ -137,64 +171,3 @@
     opacity: 0.70;
     }
  }
- /* ==============================================Name Animation====================================*/
- @import url(https://fonts.googleapis.com/css?family=Montserrat);
-svg {
-    display: block;
-    font: 3.8em 'Montserrat';
-    width: 800px;
-    height: 200px;
-    margin: 0 auto;
-    text-align: center;
-    /* padding-top: 0%;
-    background-color: black;
-    opacity: 0.8;
-    height: auto;
-    width: 41%;
-    margin-left: 30%; */
-}
-
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.0s infinite linear;
-}
-.use{
-    padding-top: 0%;
-    background-color: black;
-    opacity: 0.8;
-    height: auto;
-    width: 41%;
-    margin-left: 30%;
-}
-.text-copy:nth-child(1){
-	stroke: #4285F4;
-	animation-delay: 0;
-}
-
-.text-copy:nth-child(2){
-	stroke: #DB4437;
-	animation-delay: -1s;
-}
-
-.text-copy:nth-child(3){
-	stroke: #F4B400;
-	animation-delay: -2s;
-}
-
-.text-copy:nth-child(4){
-	stroke: #DB4437;
-	animation-delay: -3s;
-}
-
-.text-copy:nth-child(5){
-	stroke: #0F9D58;
-	animation-delay: -3.8s;
-}
-
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
-}
