@@ -106,38 +106,7 @@
  }
 
  /* ==============================================Name Animation====================================*/
-  .text {
-      margin-top: 100px;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-  }
-  h1 {
-      color: #282e34;
-      letter-spacing: 8px;
-      font-family: 'Charmonman', cursive;
-  }
-  .glow {
-      text-shadow: 0 0 20px #282e34;
-      animation: 3s glow-effect infinite alternate;
-  }
-  .glow:hover {
-      color: white;
-      animation: none;
-      text-shadow: 0 0 30px white, 0 0 60px white, 0 0 70px white, 0 0 90px white;
-  }
-  @keyframes blink {
-      100% {
-          color: white;
-          animation: none;
-          text-shadow: 0 0 30px white, 0 0 60px white, 0 0 70px white, 0 0 90px white;
-      }
-  }
-  @keyframes glow-effect {
-      100% {
-          text-shadow: 0 0 30px yellow, 0 0 40px yellow, 0 0 60px yellow;
-      }
-  }
+  
 /* ==============================================End of Name============================= */
 /* Mobile responsiveness */
 @media (min-width: 301px) and (max-width: 558px) {
