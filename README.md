@@ -37,4 +37,4 @@ Resources
     Adam Gool
 
 Live link here :
-https://Addy1293.github.io/Online_CV_Final/index.html
+https://Addy1293.github.io/Online_CV/index.html
